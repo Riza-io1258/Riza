@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Materi</title>
+  <link rel="stylesheet" href="langkah.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Rizanul<span>Haqi</span></a>
+    
+    <div class="navbar-nav">
+          <a href="index.html">Home</a>
+          <a href="#Materi.html">Debian</a>
+          <a href="instal.html">Tutorial Instalasi Debian</a>
+          <a href="IP.html">Setting IP Debian</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="#" id="menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+    <!-- navbar end -->
+  
+    <!-- materi start -->
+    <div class="Tugas">
+      <h1>Setting IP Debian</h1>
+          </div>
+      <div class="isi"> 
+      <h3>Langkah-langkah</h3>
+       <p>1. Masuk ke mode root dengan perintah “su”.<br>
+       2. Setelah itu ketik perintah “nano /etc/network/interfaces”.<br>
+          <img src="1.jpg" class="foto"><br>
+       3.  Lalu atur IP address dengan perintah sebagai berikut:<br>
+       auto enp0s8<br>
+       iface enp0s8 inet static<br>
+       address 192.168.1.1/28<br>
+        <img src="2.jpg" class="foto"><br>
+       4. Kemudian simpan menggunakan CTRL + x dan y enter.<br>
+       5. Setelah itu restart menggunakan perintah “/etc/init.d/networking restart”.<br>
+       <img src="3.jpg" class="foto"><br>
+       6. setelah di restart kita cek ip pada debian menggunakan perintah ip -c a atau ip a<br>
+       <img src="4.jpg" class="foto"><br>
+       7. Lalu hubungkan IP debian ke windows untuk mengecek apakah konfigurasi berhasil.<br>
+       <img src="tes.jpg" class="foto">
+ </p>
+       </div>
+
+    
+
+    <!-- materi end -->
+    
+    <!-- footer start -->
+    <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Sosial Media</h3>
+      <div class="sosial">
+        <a href="https://www.instagram.com/haqirizanul?igsh=c2duaWlmZTZubnA="><img src="Instagram.jpg" alt="instagram"></a>
+        <a href="https://www.facebook.com/share/16988cdRv4/"><img src="fb.jpg" alt="facebook"></a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h3>Copyright</h3>
+      <p>&copy; 2025 Rizanul Haqi. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+        <script>
+      feather.replace();
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
